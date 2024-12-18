@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<button onclick="Clock()">
+Keep Time Track
+</button>
+<h1 id="Watch"></h1>
+<h1 id="Sundile"></h1>
+<script>
+function Clock(){
+                  var greating;
+                  var time=new Date().getHours()
+                  if(time<10){
+                  greating="Good Morning"
+                  }
+                  else if(time>20){
+                  greating="Good Afternoon"
+                  }
+                  else{
+                  greating="Good Evening"
+                  }
+                  document.getElementById("Watch").innerHTML=time
+                  document.getElementById("Sundile").innerHTML=greating
+}
+</script>
+</body>
+</html>
